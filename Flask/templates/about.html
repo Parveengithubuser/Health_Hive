@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Health Hive</title>
+    <link rel="stylesheet" href="{{url_for('Flask', filename='static\css\style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                   <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="services.html">SERVICES</a></li>
+                  <li><a href="Medicines.html">APPOINTMENTS</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+        
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+        
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>MOST EXPERIENCED DOCTORS</h1>
+            <p>Our doctors are medical professionals who have accumulated a significant amount of knowledge, skills, and practical expertise in their field of medicine over many years of practice</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+        <img src="images/experience.avif">
+        </div>
+    
+    </div>
+    
+    
+    </section>
+        
+        
+        
+        
+        
+        
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Our platform is designed to make healthcare convenient, accessible, and personalized<br>Whether you're seeking medical advice, monitoring your health goals, or looking for reliable information<br>Our team of certified doctors are here to guide you every step of the way</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin"></i>
+    
+    </div>
+ </section>
+    
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+     function hideMenu(){
+         navLinks.style.right="-200px";
+     }
+       
+    
+    
+    
+</script>
+
+</body>
+</html>
